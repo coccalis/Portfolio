@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Jersey25";
+  src: local("Jersey25-Regular"),
+    url("../assets/fonts/Jersey25-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "VCR";
+  src: local("VCR_OSD_MONO_1.001"),
+    url("../assets/fonts/VCR_OSD_MONO_1.001.ttf") format("truetype");
+}
+@font-face {
+  font-family: "PIXELARI";
+  src: local("Pixellari"),
+    url("../assets/fonts/Pixellari.ttf") format("truetype");
+}
