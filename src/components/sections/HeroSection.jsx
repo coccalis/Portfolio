@@ -5,16 +5,16 @@ function HeroSection() {
   return (
     <div
       id="#home"
-      className="flex items-center justify-center min-h-full md:px-10 lg:px-24 mb-10 "
+      className="flex flex-col md:flex-row items-center justify-center min-h-full md:px-10 lg:px-24 mb-10 "
     >
       <div className="w-2/4 md:px-5 lg:px-16 py-8 font-pixelari">
-        <h1 className="text-6xl dark:text-txtclr-default text-txtlight-clr mb-4 ">
+        <h1 className="text-6xl text-center md:text-start dark:text-txtclr-default text-txtlight-clr mb-4 ">
           Hello, I'm Chris!
         </h1>
-        <p className="text-xl text-txtclr-special">
+        <p className="text-xl text-center md:text-start text-txtclr-special">
           I create and design stuff for the web.
         </p>
-        <div className="flex space-x-4 py-5">
+        <div className="flex justify-center md:justify-start space-x-4 py-5">
           <a
             href="https://github.com/coccalis"
             target="_blank"
