@@ -34,14 +34,14 @@ function Contact() {
   };
 
   return (
-    <div className="max-w-screen-2xl mx-auto pt-10">
+    <div id="contact" className="max-w-screen-2xl mx-auto pt-10">
       <h1 className="text-4xl text-center md:text-start underline text-txtlight-clr dark:text-txtclr-default px-16 pb-5  font-pixelari">
         Contact me
       </h1>
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="space-y-4 max-w-lg mx-auto"
+        className="space-y-4 max-w-lg mx-10 md:mx-auto"
       >
         <div>
           <label className="block text-xl text-txtlight-clr dark:text-txtclr-default font-pixelari">
@@ -91,7 +91,7 @@ function Contact() {
               Send Message
             </Button>
           </PopoverTrigger>
-          <PopoverContent>
+          <PopoverContent className="bg-bg-light dark:bg-bg-primary">
             <div className="px-1 py-2">
               <div className="text-md font-pixelari">{popoverMessage}</div>
             </div>

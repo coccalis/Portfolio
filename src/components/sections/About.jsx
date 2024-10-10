@@ -1,15 +1,16 @@
 import { createElement } from "react";
 import { skillsFramework, skillsLanguages, tools } from "../../data/SkillData";
 import { motion } from "framer-motion";
+import { Button } from "@nextui-org/react";
 
 function About() {
   return (
-    <div id="#about" className="max-w-screen-2xl mx-auto my-10 font-pixelari">
+    <div id="about" className="max-w-screen-2xl mx-auto my-10 font-pixelari">
       <h1 className="text-4xl text-center md:text-start underline text-txtlight-clr dark:text-txtclr-default px-16 pb-5">
         About me
       </h1>
       <div className="flex flex-col md:flex-row items-center">
-        <div className="md:w-1/2 flex justify-normal px-16 mb-10">
+        <div className="md:w-1/2  justify-normal px-16 mb-10">
           <p className="text-xl text-center md:text-start text-txtlight-clr dark:text-txtclr-default font-medium">
             Hello!! My name is Chris Kokkalis. <br />
             I'm an undergraduate student at the University of West Attica, based
@@ -18,6 +19,14 @@ function About() {
             designer. My focus is on blending creativity with technical
             expertise to create seamless web experiences.
           </p>
+          <div className="flex justify-center my-5">
+            <Button
+              className="bg-btn-default hover:bg-btn-hover transition w-1/2 text-xl text-txtclr-default"
+              radius="sm"
+            >
+              Download my CV
+            </Button>
+          </div>
         </div>
         <div className="w-1/2 px-1 sm:px-5">
           <div className="w-full border-1 p-2 md:p-5 border-bg-primary dark:border-divider-clr  rounded-md space-y-5">

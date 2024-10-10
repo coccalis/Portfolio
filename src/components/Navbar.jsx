@@ -7,8 +7,10 @@ import {
   Switch,
 } from "@nextui-org/react";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { SunIcon } from "../assets/icons/SunIcon";
 import { MoonIcon } from "../assets/icons/MoonIcon";
+import ScrollToHashElement from "./ScrollToHashElement";
 
 function Navbar() {
   const [isSelected, setIsSelected] = useState(false);
@@ -36,28 +38,29 @@ function Navbar() {
 
   return (
     <nav className="p-4 bg-bg-light  dark:bg-bg-primary font-pixelari">
+      <ScrollToHashElement />
       <div className="container mx-auto flex xsm:justify-center lg:justify-end items-center">
         <div className="flex flex-wrap justify-center items-center space-x-8">
           <ul className="flex space-x-12  dark:text-txtclr-default text-txtlight-clr font-semibold  ">
             <li>
-              <a href="/#home" className="hover:text-txtclr-hover">
+              <Link to="#home" className="hover:text-txtclr-hover">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/#about" className="hover:text-txtclr-hover">
+              <Link to="#about" className="hover:text-txtclr-hover">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#projects" className="hover:text-txtclr-hover">
+              <Link to="#projects" className="hover:text-txtclr-hover">
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contact" className="hover:text-txtclr-hover">
+              <Link to="#contact" className="hover:text-txtclr-hover">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
 

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { createElement } from "react";
 import { motion } from "framer-motion";
 
-function CardProject({ image, title, description, gh, tech }) {
+function CardProject({ image, title, description, roles, gh, tech }) {
   return (
     <motion.div
       className="relative rounded-md m-5 border-1 border-bg-primary dark:border-bg-light shadow-xl"
@@ -13,7 +13,7 @@ function CardProject({ image, title, description, gh, tech }) {
       <div className="relative">
         <img
           src={image}
-          className="w-fit h-fit rounded-t-md border-b-1 border-bg-primary dark:border-bg-light"
+          className="w-full h-80 object- rounded-t-md border-b-1 border-bg-primary dark:border-bg-light" // Adjusted the class here
           alt="bg-prev"
         />
 
@@ -32,7 +32,11 @@ function CardProject({ image, title, description, gh, tech }) {
       <div className="p-2">
         <div className="space-y-3">
           <h1 className="text-2xl">{title}</h1>
-          <p>{description}</p>
+          {description.split("\n").map((line, index) => (
+            <p key={index}>{line}</p>
+          ))}
+          <p className="text-lg">My Role for this project:</p>
+          <p>{roles}</p>
           <p className="text-lg">Tech:</p>
         </div>
         <div className="flex flex-wrap mt-2">
