@@ -21,7 +21,7 @@ function About() {
           </p>
           <div className="flex justify-center my-5">
             <Button
-              className="bg-btn-default hover:bg-btn-hover transition w-1/2 text-xl text-txtclr-default"
+              className="bg-btn-default hover:bg-btn-hover transition w-full md:w-1/2 text-xl text-txtclr-default"
               radius="sm"
             >
               Download my CV
@@ -33,7 +33,7 @@ function About() {
             <h1 className="text-2xl text-center md:text-start  text-txtlight-clr dark:text-txtclr-default">
               My Skills
             </h1>
-            <div className="grid grid-rows-3 w-full gap-5">
+            <div className="grid grid-rows-3 w-full gap-5 px-2">
               <div aria-label="div language">
                 <h1 className="text-center md:text-start">Languages</h1>
                 <div className="flex flex-wrap space-5">

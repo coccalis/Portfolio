@@ -88,7 +88,7 @@ function Contact() {
               value="send"
               className="w-full p-3 bg-btn-default text-txtclr-default rounded-md hover:bg-btn-hover transition font-pixelari text-xl"
             >
-              Send Message
+              Send Email
             </Button>
           </PopoverTrigger>
           <PopoverContent className="bg-bg-light dark:bg-bg-primary">

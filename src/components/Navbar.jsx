@@ -40,7 +40,7 @@ function Navbar() {
     <nav className="p-4 bg-bg-light  dark:bg-bg-primary font-pixelari">
       <ScrollToHashElement />
       <div className="container mx-auto flex xsm:justify-center lg:justify-end items-center">
-        <div className="flex flex-wrap justify-center items-center space-x-8">
+        <div className="flex flex-wrap justify-center items-center space-x-8 space-y-5">
           <ul className="flex space-x-12  dark:text-txtclr-default text-txtlight-clr font-semibold  ">
             <li>
               <Link to="#home" className="hover:text-txtclr-hover">
@@ -77,7 +77,7 @@ function Navbar() {
             }
           ></Switch>
 
-          <Dropdown
+          {/* <Dropdown
             showArrow
             radius="sm"
             classNames={{ content: "min-w-full p-0" }}
@@ -100,7 +100,7 @@ function Navbar() {
               <DropdownItem key="EN">EN</DropdownItem>
               <DropdownItem key="EL">EL</DropdownItem>
             </DropdownMenu>
-          </Dropdown>
+          </Dropdown> */}
         </div>
       </div>
     </nav>
