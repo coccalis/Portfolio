@@ -2,6 +2,7 @@ import { createElement } from "react";
 import { skillsFramework, skillsLanguages, tools } from "../../data/SkillData";
 import { motion } from "framer-motion";
 import { Button } from "@nextui-org/react";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -24,11 +25,13 @@ function About() {
               className="bg-btn-default hover:bg-btn-hover transition w-full md:w-1/2 text-xl text-txtclr-default"
               radius="sm"
             >
-              Download my CV
+              <Link to="/files/MyResume.pdf" target="_blank" download>
+                Download my CV
+              </Link>
             </Button>
           </div>
         </div>
-        <div className="w-1/2 px-1 sm:px-5">
+        <div className="xsm:w-full sm:w-1/2 px-10  sm:px-5">
           <div className="w-full border-1 p-2 md:p-5 border-bg-primary dark:border-divider-clr  rounded-md space-y-5">
             <h1 className="text-2xl text-center md:text-start  text-txtlight-clr dark:text-txtclr-default">
               My Skills
@@ -36,7 +39,7 @@ function About() {
             <div className="grid grid-rows-3 w-full gap-5 px-2">
               <div aria-label="div language">
                 <h1 className="text-center md:text-start">Languages</h1>
-                <div className="flex flex-wrap space-5">
+                <div className="flex flex-wrap xsm:flex-col sm:flex-row items-center space-5">
                   {skillsLanguages.map((skill, index) => (
                     <motion.div
                       whileHover={{ scale: 1, y: -10 }}
@@ -60,7 +63,7 @@ function About() {
                 <h1 className="text-center md:text-start">
                   Frameworks/Libraries
                 </h1>
-                <div className="flex flex-wrap space-5">
+                <div className="flex  flex-wrap xsm:flex-col sm:flex-row items-center space-y-5">
                   {skillsFramework.map((skill, index) => (
                     <motion.div
                       whileHover={{ scale: 1, y: -10 }}
@@ -82,7 +85,7 @@ function About() {
               </div>
               <div aria-label="div tools">
                 <h1 className="text-center md:text-start">Tools</h1>
-                <div className="flex flex-wrap space-5">
+                <div className="flex  flex-wrap xsm:flex-col sm:flex-row items-center space-y-5">
                   {tools.map((tool, index) => (
                     <motion.div
                       whileHover={{ scale: 1, y: -10 }}

@@ -6,35 +6,17 @@ import {
   DropdownTrigger,
   Switch,
 } from "@nextui-org/react";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { SunIcon } from "../assets/icons/SunIcon";
 import { MoonIcon } from "../assets/icons/MoonIcon";
 import ScrollToHashElement from "./ScrollToHashElement";
+import { ThemeContext } from "../context/ThemeContext";
 
 function Navbar() {
-  const [isSelected, setIsSelected] = useState(false);
   const [selectedLang, setSelectedLang] = useState(new Set(["EN"]));
 
-  useEffect(() => {
-    const theme = localStorage.getItem("theme");
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-      setIsSelected(true); // Set the dark mode to true
-    }
-  }, []);
-
-  const handleDarkMode = () => {
-    if (document.documentElement.classList.contains("dark")) {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-      setIsSelected(false); // Set the dark mode to false
-    } else {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-      setIsSelected(true); // Set the dark mode to true
-    }
-  };
+  const { handleDarkMode, isSelected } = useContext(ThemeContext);
 
   return (
     <nav className="p-4 bg-bg-light  dark:bg-bg-primary font-pixelari">

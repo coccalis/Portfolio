@@ -14,7 +14,7 @@ export default {
       },
       colors: {
         "bg-primary": "#131221",
-        "bg-light": "#f1f4fc",
+        "bg-light": "#FAFBFD",
         //text color hex
         "txtclr-default": "#f1f4fc",
         "txtlight-clr": "#121221",

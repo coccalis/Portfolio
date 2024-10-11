@@ -48,7 +48,7 @@ export const ProjectData = [
   {
     img: music,
     title: "SensationsMusicPlayer",
-    des: "This Android app was developed for a university group assignment. It's a basic music player.",
+    des: "This Android app was developed for a university group assignment. It’s a simple music player with file selection, playback controls, and background functionality .",
     roles: "Front-end development and UX/UI design",
     gh: "https://github.com/MinistryOrg/SensationsMusicPlayer",
     tech: [

@@ -1,9 +1,14 @@
+import { useContext, useEffect, useState } from "react";
+import { Popover, PopoverContent, PopoverTrigger } from "@nextui-org/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { Popover, PopoverContent, PopoverTrigger } from "@nextui-org/react";
+import day from "../../assets/images/home_pixel-day.png";
+import night from "../../assets/images/home_pixel-night.png";
+import { ThemeContext } from "../../context/ThemeContext";
 
 function HeroSection() {
+  const { isDarkMode } = useContext(ThemeContext);
   return (
     <div
       id="home"
@@ -13,13 +18,14 @@ function HeroSection() {
         <h1 className="text-6xl text-center md:text-start dark:text-txtclr-default text-txtlight-clr mb-4 ">
           Hello, I'm Chris!
         </h1>
-        <p className="text-xl text-center md:text-start text-txtclr-special">
+        <p className="text-2xl text-center md:text-start text-txtclr-special">
           I create and design stuff for the web.
         </p>
         <div className="flex justify-center md:justify-start space-x-4 py-5">
           <a
             href="https://github.com/coccalis"
             target="_blank"
+            rel="noreferrer"
             className="hover:text-txtclr-hover transition"
           >
             <FontAwesomeIcon icon={faGithub} className="size-7" />
@@ -27,6 +33,7 @@ function HeroSection() {
           <a
             href="https://www.linkedin.com/in/chris-kokkalis-028773216/"
             target="_blank"
+            rel="noreferrer"
             className="hover:text-txtclr-hover transition"
           >
             <FontAwesomeIcon icon={faLinkedin} className="size-7  " />
@@ -49,11 +56,11 @@ function HeroSection() {
         </div>
       </div>
 
-      <div className="w-1/2 px-8 py-8 flex justify-center">
+      <div className="xsm:w-full sm:w-1/2 px-8 py-8 flex justify-center">
         <img
-          src="https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif" // Replace with your desired GIF URL
+          src={isDarkMode ? night : day} // Replace with your desired GIF URL
           alt="Developer GIF"
-          className="w-96 h-96 object-cover rounded-lg"
+          className="w-10/12 object-cover"
         />
       </div>
     </div>
