@@ -7,7 +7,7 @@ function Projects() {
       <h1 className="text-center md:text-start text-txtlight-clr dark:text-txtclr-default px-16 text-3xl underline">
         My Projects
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-7 px-10 my-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-7 xsm:px-5 sm:px-10 my-5">
         {ProjectData.map((project, index) => (
           <CardProject
             key={index}
