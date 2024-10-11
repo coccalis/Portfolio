@@ -63,7 +63,7 @@ function About() {
                 <h1 className="text-center md:text-start">
                   Frameworks/Libraries
                 </h1>
-                <div className="flex  flex-wrap xsm:flex-col sm:flex-row items-center space-y-5">
+                <div className="flex  flex-wrap xsm:flex-col sm:flex-row items-center space-x-5 xsm:space-y-5 sm:space-y-0">
                   {skillsFramework.map((skill, index) => (
                     <motion.div
                       whileHover={{ scale: 1, y: -10 }}
