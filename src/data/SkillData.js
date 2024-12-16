@@ -1,8 +1,10 @@
+import { icon } from "leaflet";
 import {
   CSSIcon,
   FigmaIcon,
   HtmlIcon,
   JSIcon,
+  MotionIcon,
   ReactIcon,
   ReduxIcon,
   TailwindIcon,
@@ -17,9 +19,10 @@ export const skillsLanguages = [
 ];
 
 export const skillsFramework = [
-  { icon: ReactIcon, label: "React/ React Native" },
+  { icon: ReactIcon, label: "React / React Native" },
   { icon: ReduxIcon, label: "Redux" },
   { icon: TailwindIcon, label: "TailwindCSS" },
+  { icon: MotionIcon, label: "Motion" },
 ];
 
 export const tools = [{ icon: FigmaIcon, label: "Figma" }];

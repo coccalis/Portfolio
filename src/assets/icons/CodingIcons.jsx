@@ -188,6 +188,27 @@ const TypeScriptIcon = (props) => (
     </g>
   </svg>
 );
+const MotionIcon = (props) => (
+  <svg
+    width="3em"
+    height="3em"
+    viewBox="0 0 181 180"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <ellipse cx="90.5" cy="90" rx="90.5" ry="90" fill="#F5EA16" />
+    <path
+      d="M37.0817 75.0512C41.3611 67.5967 49.3003 63 57.8958 63H71.5L41 117H13L37.0817 75.0512Z"
+      fill="#131519"
+    />
+    <path d="M76.5 63H104L73 117.5H45L76.5 63Z" fill="#131519" />
+    <path
+      d="M112.918 104.949C108.639 112.403 100.7 117 92.1042 117H78.5L109 63H137L112.918 104.949Z"
+      fill="#131519"
+    />
+    <ellipse cx="153" cy="76.5" rx="14" ry="13.5" fill="#131519" />
+  </svg>
+);
 
 export {
   ReactIcon,
@@ -197,5 +218,6 @@ export {
   JSIcon,
   TailwindIcon,
   FigmaIcon,
+  MotionIcon,
   TypeScriptIcon,
 };
