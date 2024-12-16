@@ -190,11 +190,12 @@ const TypeScriptIcon = (props) => (
 );
 const MotionIcon = (props) => (
   <svg
-    width="3em"
-    height="3em"
+    width="1em"
+    height="1em"
     viewBox="0 0 181 180"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <ellipse cx="90.5" cy="90" rx="90.5" ry="90" fill="#F5EA16" />
     <path
