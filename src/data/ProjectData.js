@@ -1,6 +1,17 @@
-import { ReactIcon, TailwindIcon } from "../assets/icons/CodingIcons.jsx";
+import {
+  AzureIcon,
+  GeminiIcon,
+  leafleatIcon,
+  MotionIcon,
+  PostgreSQLIcon,
+  ReactIcon,
+  ReduxIcon,
+  SpringBootIcon,
+  TailwindIcon,
+} from "../assets/icons/CodingIcons.jsx";
 
 import apointly from "../assets/images/apointly-prev.png";
+import levart from "../assets/images/levart.png";
 import intelli from "../assets/images/intelli.png";
 import grade from "../assets/images/grade.png";
 import music from "../assets/images/musicplayer.png";
@@ -10,6 +21,25 @@ import jetpack from "../assets/images/jetpack-compose.png";
 import kotlin from "../assets/images/Kotlin_Icon.png";
 
 export const ProjectData = [
+  {
+    img: levart,
+    title: "Levart",
+    des: "This fullstack project was created for my thesis. Its goal is to combine the features of travel sites like TripAdvisor and Expedia with a social media aspect, making it more fun and engaging for users. It is a platform dedicated to travelers, allowing them to connect and share stories. This is a version of what a social media-based travel app could look like. Many features will be added in the future.",
+    roles: "Front-end, Back-end development and UX/UI design",
+    gh: "https://github.com/coccalis/Levart",
+    tech: [
+      { logo: ReactIcon, label: "React.js" },
+      { logo: ReduxIcon, label: "Redux" },
+      { logo: SpringBootIcon, label: "Spring Boot" },
+      { logo: PostgreSQLIcon, label: "PostgreSQL" },
+      { logo: AzureIcon, label: "Azure" },
+      { logo: GeminiIcon, label: "Gemini AI" },
+      { logo: leafleatIcon, label: "Leaflet" },
+      { logo: MotionIcon, label: "Framer Motion" },
+      { logo: TailwindIcon, label: "Tailwindcss" },
+      { logo: nextui, label: "NextUI" },
+    ],
+  },
   {
     img: apointly,
     title: "Apointly",
