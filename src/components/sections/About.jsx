@@ -1,7 +1,6 @@
 import { createElement } from "react";
 import { skillsFramework, skillsLanguages, tools } from "../../data/SkillData";
 import { motion } from "framer-motion";
-import { Button } from "@nextui-org/react";
 import { Link } from "react-router-dom";
 
 function About() {
@@ -29,9 +28,14 @@ function About() {
               type="button"
               className="bg-btn-default hover:bg-btn-hover transition w-full md:w-1/2 text-xl text-txtclr-default rounded-md p-2"
             >
-              <Link to="/files/Chris_Kokkalis_CV.pdf" target="_blank" download>
+              <a
+                href="/files/Chris_Kokkalis_CV.pdf"
+                download="Chris_Kokkalis_CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 View my CV
-              </Link>
+              </a>
             </motion.button>
           </div>
         </div>
