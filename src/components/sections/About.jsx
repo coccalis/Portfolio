@@ -14,12 +14,13 @@ function About() {
         <div className="md:w-1/2  justify-normal px-16 mb-10">
           <p className="text-xl text-center md:text-start text-txtlight-clr dark:text-txtclr-default font-medium">
             Hello!! My name is Chris Kokkalis.
-            <br />I am in my final semester as a student at the University of
-            West Attica, pursuing a Master’s in Engineering (MEng) in
-            Informatics and Computer Engineering. I am a Junior React Developer
-            and have a passion for crafting intuitive and engaging user
-            interfaces as a UI/UX designer. My focus is on blending creativity
-            with technical expertise to create seamless web experiences.
+            <br />I am a graduate student from University of West Attica with a
+            Master's degree in Informatics and Computer Engineering. Throughout
+            my academic years, I discovered that I have a natural inclination
+            toward front-end development and UI/UX design. My main goal is to
+            solve complex problems that might occur and create-design engaging
+            applications for the users. I am actively seeking new opportunities
+            and challenges that will expand my skill set.
           </p>
           <div className="flex justify-center my-5">
             <motion.button
