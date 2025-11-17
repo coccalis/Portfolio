@@ -29,7 +29,7 @@ function About() {
               className="bg-btn-default hover:bg-btn-hover transition w-full md:w-1/2 text-xl text-txtclr-default rounded-md p-2"
             >
               <a
-                href="/files/Chris_Kokkalis_CV.pdf"
+                href="files/Chris_Kokkalis_CV.pdf"
                 download="Chris_Kokkalis_CV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
